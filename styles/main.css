@@ -1,0 +1,495 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+/* Colors */
+/* Global Variables */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  background: #f0f0f0; }
+
+.paypal-wrap {
+  width: 100%;
+  background: #f0f0f0;
+  padding: 100px 0; }
+
+#paypal-module {
+  width: 768px;
+  margin: 0 auto;
+  text-align: center; }
+  #paypal-module h1 {
+    width: 100%;
+    font-size: 4em;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700; }
+  #paypal-module p {
+    width: 100%;
+    font-size: 1.6em;
+    line-height: 1.8em;
+    color: #555;
+    font-weight: 300;
+    /*font-family: 'Lora', serif;*/ }
+  #paypal-module section {
+    padding: 50px 120px; }
+    #paypal-module section h2,
+    #paypal-module section a {
+      display: inline-block;
+      vertical-align: bottom; }
+    #paypal-module section h2 {
+      position: relative;
+      font-size: 1.4em;
+      color: #333;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.8em; }
+  #paypal-module footer {
+    border: 1px dashed #ddd;
+    padding: 30px 50px;
+    border-radius: 4px;
+    background: #fff;
+    width: 100%;
+    margin: 60px auto 0; }
+    #paypal-module footer h2,
+    #paypal-module footer a {
+      display: inline-block;
+      vertical-align: bottom; }
+    #paypal-module footer h2 {
+      position: relative;
+      font-size: 1.2em;
+      color: #333;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.6em; }
+    #paypal-module footer a {
+      font-size: 1em;
+      color: #800020;
+      border-bottom: 1px solid #800020;
+      padding: 0 2px;
+      margin: 0 2px -1px; }
+
+#map {
+  width: 600px;
+  height: 300px;
+  background: #ddd;
+  margin: 0 auto;
+  display: none; }
+
+.where-wrap {
+  width: 100%;
+  background: #fff;
+  padding: 100px 0; }
+
+#where {
+  width: 768px;
+  margin: 0 auto;
+  text-align: center; }
+  #where h1 {
+    width: 100%;
+    font-size: 4em;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  #where section {
+    display: inline-block;
+    width: 100%;
+    background: #f0f0f0;
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+    padding: 30px 50px;
+    margin: 20px 0 0; }
+    #where section p {
+      width: 100%;
+      font-size: 1.6em;
+      line-height: 1.8em;
+      color: #333;
+      font-weight: 400;
+      font-style: italic; }
+    #where section h3 {
+      width: 100%;
+      font-size: 2.4em;
+      line-height: 1.8em;
+      color: #333;
+      font-weight: 400;
+      font-style: italic; }
+    #where section h4 {
+      width: 100%;
+      font-size: 2.4em;
+      line-height: 1.8em;
+      color: #333;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 20px; }
+    #where section a {
+      font-size: 1em;
+      color: #800020;
+      border-bottom: 1px solid #800020;
+      padding: 0 2px 2px; }
+    #where section h2 {
+      font-size: 1em;
+      font-weight: 300;
+      margin: 10px 0 0;
+      color: #999; }
+
+#paypal-button {
+  background: #800020;
+  padding: 15px 40px;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  /*text-transform: uppercase;*/
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 250ms; }
+  #paypal-button span {
+    margin-left: 2px;
+    font-size: 1em; }
+
+#paypal-button:hover {
+  background: #B71C1C; }
+
+.select-style {
+  padding: 0;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  width: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+  background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%; }
+
+.select-style select {
+  padding: 5px 8px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.select-style select:focus {
+  outline: none; }
+
+/* Full Page */
+.full-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f0f0f0;
+  margin: 0 auto;
+  text-align: center; }
+  .full-page span {
+    position: absolute;
+    font-size: 2em;
+    margin: 0 auto;
+    bottom: 50px;
+    color: #333; }
+
+#arrow {
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+#banner {
+  position: relative;
+  margin: 0 auto;
+  width: 720px;
+  padding-top: 30vh;
+  text-align: center;
+  z-index: 10; }
+  #banner p {
+    font-size: 5em;
+    color: #fff;
+    background: #800020;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    margin: 0 auto 30px;
+    padding-top: 25px; }
+  #banner h1 {
+    font-size: 5em;
+    color: #800020;
+    text-transform: uppercase;
+    font-weight: 900; }
+  #banner h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+    font-weight: 400;
+    font-style: italic; }
+
+/* Loading Overlay */
+.loading-overlay {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 3000;
+  position: fixed;
+  transition: 3000ms; }
+
+.opacity-0 {
+  opacity: 0;
+  z-index: -1; }
+
+.hidden {
+  display: none; }
+
+/* Footer */
+.module-header-dark {
+  position: relative;
+  text-align: left;
+  width: 1080px;
+  margin: 0 auto;
+  z-index: 2000;
+  padding: 60px 0 0; }
+  .module-header-dark h1 {
+    color: #ddd;
+    font-size: 1.5em;
+    font-weight: 300; }
+
+#progress1,
+#progress2,
+#progress3,
+#progress4 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 75px; }
+
+#progressLogo {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 75px;
+  display: none; }
+
+#userProgress1,
+#userProgress2,
+#userProgress3 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  text-align: center; }
+
+#user-progress-wrap {
+  width: 100%;
+  padding: 150px 0;
+  background: #252525; }
+
+.user-progress-guide {
+  width: 320px;
+  height: 6px;
+  background: #ffc400;
+  background: -moz-linear-gradient(left, #ffc400 0%, #ef5250 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ffc400), color-stop(100%, #ef5250));
+  background: -webkit-linear-gradient(left, #ffc400 0%, #ef5250 100%);
+  background: -o-linear-gradient(left, #ffc400 0%, #ef5250 100%);
+  background: -ms-linear-gradient(left, #ffc400 0%, #ef5250 100%);
+  background: linear-gradient(to right, #ffc400 0%, #ef5250 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc400', endColorstr='#ef5250', GradientType=1 );
+  border-radius: 20px;
+  margin: 100px auto 0;
+  position: relative; }
+
+.guide-span1,
+.guide-span2,
+.guide-span3 {
+  position: absolute;
+  width: 5px;
+  height: 15px;
+  background: #252525;
+  /*border: 1px solid #ddd;*/
+  top: -2.5px;
+  text-align: center; }
+
+.guide-span1 {
+  left: 30px; }
+  .guide-span1 h1 {
+    position: absolute;
+    margin-top: 20px;
+    margin: 25px auto 0;
+    left: -26px;
+    right: 0;
+    width: 60px;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 300;
+    color: #ddd; }
+
+.guide-span2 {
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+  .guide-span2 h1 {
+    position: absolute;
+    margin-top: 20px;
+    margin: 25px auto 0;
+    left: -30px;
+    right: 0;
+    width: 60px;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 300;
+    color: #ddd; }
+
+.guide-span3 {
+  right: 30px; }
+  .guide-span3 h1 {
+    position: absolute;
+    margin-top: 20px;
+    margin: 25px auto 0;
+    left: -26px;
+    right: 0;
+    width: 60px;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 300;
+    color: #ddd; }
+
+.user-progress {
+  width: 960px;
+  margin: 0 auto; }
+  .user-progress div {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    text-align: center;
+    transition: 250ms; }
+    .user-progress div img,
+    .user-progress div h1,
+    .user-progress div li {
+      display: inline-block;
+      vertical-align: top; }
+    .user-progress div img {
+      width: 120px;
+      height: 120px;
+      border-radius: 80px; }
+    .user-progress div h1 {
+      color: #f0f0f0;
+      font-size: 1.8em;
+      font-weight: 400;
+      display: none; }
+    .user-progress div p {
+      font-size: 1em;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.6em;
+      padding: 15px 30px 50px;
+      display: none; }
+    .user-progress div li {
+      text-align: center;
+      padding: 0 30px;
+      margin-top: 20px;
+      position: relative; }
+      .user-progress div li h2 {
+        position: absolute;
+        top: 45px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        color: #999;
+        font-size: 1em;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .user-progress div li a {
+        position: absolute;
+        display: inline-block;
+        bottom: 35px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.1);
+        width: 80px;
+        padding: 5px 0;
+        border-radius: 4px;
+        left: 0;
+        right: 0;
+        color: #f0f0f0;
+        font-size: .8em;
+        font-weight: 300;
+        text-transform: uppercase; }
+
+.notch-12 {
+  position: absolute;
+  width: 5px;
+  height: 15px;
+  left: 0;
+  right: 0;
+  background: #252525;
+  margin: 0 auto;
+  z-index: 1; }
+
+.notch-6 {
+  position: absolute;
+  width: 5px;
+  height: 15px;
+  left: 0;
+  right: 0;
+  background: #252525;
+  margin: 0 auto;
+  z-index: 1;
+  bottom: 0; }
+
+.notch-3 {
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  right: 28px;
+  top: 100px;
+  background: #252525;
+  z-index: 1; }
+
+.notch-9 {
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  left: 28px;
+  top: 100px;
+  background: #252525;
+  z-index: 1; }
+
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #banner,
+  #where,
+  #paypal-module {
+    width: 100%; }
+
+  #banner h1 {
+    font-size: 3em; }
+  #banner h2 {
+    font-size: 1.6em; }
+
+  #where {
+    padding: 0 30px; }
+    #where h1 {
+      font-size: 3em; }
+    #where section {
+      padding: 30px; }
+      #where section h3 {
+        font-size: 2em; }
+
+  #paypal-module {
+    padding: 0 30px; }
+    #paypal-module h1 {
+      font-size: 3em; }
+    #paypal-module section {
+      padding: 30px 0; }
+    #paypal-module footer {
+      padding: 30px; } }
+
+/*# sourceMappingURL=main.css.map */
